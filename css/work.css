@@ -16,18 +16,7 @@
     position: absolute;
     display: table;
     background-color: rgba(1,1,1,.1);
-    opacity: 0;
-}
-
-.indiv-thumbnail:hover .darken-background,
-.indiv-thumbnail:focus .darken-background{
-    opacity: 1;
     z-index: 5;
-}
-
-.indiv-thumbnail:hover .img-scale,
-.indiv-thumbnail:focus .img-scale{
-    opacity: 0.1;
 }
 
 .indiv-thumbnail {

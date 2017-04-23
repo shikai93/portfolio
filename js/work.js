@@ -1,13 +1,28 @@
-$(".indiv-thumbnail").hover(function(){
-    var img = $(this).find('img');
-    $(this).find('.darken-background').css({
-        'width' : img.width() + 'px',
-        'height': img.height() + 'px',
-        'margin-left': img.css("margin-left")});
-});
-
-function triggerThumbnail(e) {
-    console.log(e);
+function triggerThumbnail(headerId) {
+    
+    var header = $('#' + headerId);
+    var overlay = header.find('.darken-background');
+    var img = header.find('img');
+    if (!overlay.hasClass('hidden'))
+    {
+        overlay.removeClass('onHover');
+        img.css({
+            'opacity' : '1'
+        });
+        overlay.addClass('hidden');
+    } else {
+        overlay.addClass('onHover');
+        img.css({
+            'opacity' : '0.1'
+        });
+        overlay.css({
+            'width' : img.width() + 'px',
+            'height': img.height() + 'px',
+            'margin-left': img.css("margin-left"),
+            });
+        overlay.removeClass('hidden');
+    }
+    
 }
 
 (function($) {

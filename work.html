@@ -47,43 +47,55 @@
                         <div class="contents">
                             <div class="content-height" id="thumbnails">
                                 <div class="row work-contents">
-                                    <div class="col-md-8 col-xs-12 content-height indiv-thumbnail" onclick="openProject('wndr');">
-                                        <div class='darken-background'>
+                                    <div class="col-md-8 col-xs-12 content-height indiv-thumbnail"
+                                         id="wndr-header"
+                                         onclick="openProject('wndr');">
+                                        <div class='hidden darken-background'
+                                             onmouseout="triggerThumbnail('wndr-header')">
                                             <div class="caption">
                                                 Geo-based social application developed for clients
                                             </div>
                                         </div>
-                                        <img src="img/wndr-thumb.jpg" class='img-scale' onmouseover="triggerThumbnail(e)"/>
+                                        <img src="img/wndr-thumb.jpg" class='img-scale' onmouseover="triggerThumbnail('wndr-header')"/>
                                     </div>
 
-                                    <div class="col-md-4 col-xs-12 content-height indiv-thumbnail" onclick="openProject('trashifai');">
-                                        <div class='darken-background'>
+                                    <div class="col-md-4 col-xs-12 content-height indiv-thumbnail"
+                                         id="trashifai-header"
+                                         onclick="openProject('trashifai');">
+                                        <div class='hidden darken-background'
+                                             onmouseout="triggerThumbnail('trashifai-header')">
                                             <div class="caption">
                                                 Trashifai<br>The smart waste sorting bin
                                             </div>
                                         </div>
-                                        <img src="img/trashifai.jpg" class='img-scale'/>
+                                        <img src="img/trashifai.jpg" class='img-scale' onmouseover="triggerThumbnail('trashifai-header')"/>
                                     </div>
                                     
                                 </div>
                                 <br>
                                 <div class="row work-contents">                     
-                                    <div class="col-md-4 col-xs-12 col-md-offset-1 content-height indiv-thumbnail" onclick="openProject('illumination');">
-                                        <div class='darken-background'>
+                                    <div class="col-md-4 col-xs-12 col-md-offset-1 content-height indiv-thumbnail"
+                                         id="illumination-header"
+                                         onclick="openProject('illumination');">
+                                        <div class='hidden darken-background'
+                                             onmouseout="triggerThumbnail('illumination-header')">
                                             <div class="caption">
                                                 Lighting Support and Control Design
                                             </div>
                                         </div>
-                                        <img src="img/illumination-thumb.jpg" class='img-scale' align="middle"/>
+                                        <img src="img/illumination-thumb.jpg" class='img-scale' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>
                                     </div>
                                     
-                                    <div class="col-md-7 col-xs-12 content-height indiv-thumbnail" onclick="openProject('secu-ring');">
-                                        <div class='darken-background'>
+                                    <div class="col-md-7 col-xs-12 content-height indiv-thumbnail"
+                                         id="secu-ring-header"
+                                         onclick="openProject('secu-ring');">
+                                        <div class='hidden darken-background'
+                                             onmouseout="triggerThumbnail('secu-ring-header')">
                                             <div class="caption">
                                                 Software Development Internship in Berlin
                                             </div>
                                         </div>
-                                        <img src="img/secu-ring1.jpg" class='img-scale'/>
+                                        <img src="img/secu-ring1.jpg" class='img-scale' onmouseover="triggerThumbnail('secu-ring-header')"/>
                                     </div>
                                 </div>
                             </div>
