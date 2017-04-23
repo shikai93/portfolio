@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/interest.css">
+        <link rel="stylesheet" href="css/application.css">
+        <script src="js/jquery.js"  type="text/javascript"></script>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Source+Sans+Pro" rel="stylesheet">
+        <!-- font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Source Sans Pro', sans-serif;-->
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.js"  type="text/javascript"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.js"  type="text/javascript"></script>
+        <script src="js/scrollreveal.js"  type="text/javascript"></script>
+        <script src="js/jquery.magnific-popup.js"  type="text/javascript"></script>
+        
+        <link rel="shortcut icon" href="img/avatar.png" type="image/x-icon" />
+        <title>Ng Shi Kai</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="navbar">
+                <div class="col-md-4">
+                    <img src="img/avatar.JPG" style="display: inline;"/>
+                </div>
+                <div class="col-md-8 menuBar">
+                    <ul class="list-inline">
+                        <li class="menuItem"><a href="index.html">About Me</a></li>
+                        <li class="menuItem"><a href="work.html">Work</a></li>
+                        <li class="menuItem selected"><a href="interest.html">Interest</a></li>
+                        <li class="menuItem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contents">
+                            <div class="row single-row" id="thumbnailRow">
+                                <div class="col-md-4 thumbnail-container">
+                                    <div id="dance-thumbnail">
+                                        <div class="hidden thumbnail-header" onmouseout="triggerThumbnail('dance-header');" id="dance-header" onclick="triggerInterest('dance');">
+                                            Dance
+                                        </div>
+                                        <img src="img/dance.jpg" onmouseover="triggerThumbnail('dance-header');" class="thumbnail-image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 thumbnail-container">
+                                    <div id="sketching-thumbnail">
+                                        <div class="hidden thumbnail-header" onmouseout="triggerThumbnail('sketching-header');" id="sketching-header" onclick="triggerInterest('sketch');">
+                                            Draw
+                                        </div>
+                                        <img src="img/sketch1.jpg" onmouseover="triggerThumbnail('sketching-header');" class="thumbnail-image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 thumbnail-container">
+                                    <div id="travelling-thumbnail">
+                                        <div class="hidden thumbnail-header"
+                                             onmouseout="triggerThumbnail('travelling-header');"
+                                             id="travelling-header"
+                                             onclick="triggerInterest('travel');">
+                                            Travel
+                                        </div>
+                                        <img src="img/travel.jpg" onmouseover="triggerThumbnail('travelling-header');" class="thumbnail-image"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hidden" id="interests">
+                                <div class="row interest-heading" id="dance">
+                                    <Strong>Dance</Strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <br>
+                                        <img src="img/dance1.jpg" class="indiv-image">
+                                        <div class="btn-photos">
+                                            <button class="btn btn-danger" id="dance-photos">
+                                                View Photos
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 interest-description">
+                                        <div class="row">
+                                            I started dancing in 2014 when I joined Soul Funky in Nanyang Technological University. I was curious about dance and have always wanted to learn how to become a dancer, but stopped short of trying due to my lack of courage.
+                                            <br><br>However, as I attended more classes and performances, I found myself becoming more interested in dance as it was fun and allowed me to express my intepretation of the music. Gradually, I started to try out different styles of dance such as popping, locking, house and hiphop and took external classes to improve myself.
+                                            <br><br>Dance is a powerful language that brings people from all walks of life together as they express themselves through movement. It is also a relaxing activity that provides a respite from reality.
+                                        </div>
+                                        <div class="row button-row">
+                                            <button class="btn btn-default btn-thumbnail" onclick="thumbnailView('dance');">Back</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="row interest-heading" id="sketch">
+                                    <Strong>Drawing</Strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <br>
+                                        <img src="img/sketch1.jpg" class="indiv-image">
+                                        <div class="btn-photos">
+                                            <button class="btn btn-danger" id="sketch-photos">
+                                                View Photos
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 interest-description">
+                                        <div class="row">
+                                            I have always loved reading comics, even now. I was amazed by how comic artists manage to draw well consistently in every single comic frame. Thus I started out to learn how to draw cartoon characters.
+                                            This was in line with my childhood dream of becoming a game designer and thus, drawing slowly turned into a hobby.
+                                            <br><br>However, since I did not take any drawing classes, I soon fell out of practise with drawing and was distracted by school work and games.
+                                            It was only until recently where I got back in touch with my drawing interest due to my class on industrial design, where we had to sketch various products. I found incredible joy in creating new drawings and took pride in that.
+                                            <br><br>I currently plan to create a series of drawings featuring the turtle character as depicted in the photos.
+                                        </div>
+                                        <div class="row button-row">
+                                            <button class="btn btn-default btn-thumbnail" onclick="thumbnailView('sketch');">Back</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row interest-heading" id="travel">
+                                    <Strong>Travel</Strong>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <br>
+                                        <img src="img/travel1.jpg" class="indiv-image">
+                                        <div class="btn-photos">
+                                            <button class="btn btn-danger" id="travel-photos">
+                                                View Photos
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 interest-description">
+                                        <div class="row">
+                                            Travelling has widened my horizons and allowed me to meet different people and learn about different culture. What I enjoyed most in my travels were the opportunities to experience what nature has to offer, be it mountain trekking, canoeing or surfing in the beaches.
+                                            These experience were something that Singapore, my home country, has little to offer.
+                                            <br><br>
+                                            Over the years, I have visited Bali, Thailand, Korea, China, Indonesia, Europe and United States. Each country have their unique culture and experience. However, my most memorable trip was my Korea trip, as it was one of my earlier trips.
+                                            I enjoyed the Olle-Trial in particular, which was a 20km hike along Jeju island. The amount of time required for the hike allowed us to slow down our pace and truly immersive ourselves in Jeju's nature. 
+                                        </div>
+                                        <div class="row button-row">
+                                            <button class="btn btn-default btn-thumbnail" onclick="thumbnailView('travel');">Back</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/interest.js"  type="text/javascript"></script>
+</html>

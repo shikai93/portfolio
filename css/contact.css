@@ -1,0 +1,14 @@
+.thumbnail-container {
+    margin-top: 15%;
+}
+
+.img-scale {
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact-caption{
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+}

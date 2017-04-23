@@ -1,0 +1,97 @@
+.menuBar {
+    display: inline;
+    text-align: right;
+    padding: 30px 10px;
+    font-size: x-large;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menuItem {
+    padding: 0 15px !important;
+}
+
+hr {
+  border-color: rgb(31,78,121);
+  border-width: 5px;
+}
+
+#navbar {
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.content-container {
+    background-image: url('../img/background-resized.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+    background-color: rgba(31,78,121,0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: black;
+}
+a:hover,
+a:focus {
+  color: rgba(31,78,121,1);
+  text-decoration: none;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.contents {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    overflow-y: scroll;
+    margin: 1vh;
+    border-radius: 5px;
+    height: 78vh;
+    font-size: x-large;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+}
+
+.whoami{
+    padding-left: 10%;
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.about-image-container{
+    padding: 15px;
+    height: 100%;
+}
+
+.img-about{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.about-info-container {
+    margin-top: 10px;
+    height: 90%;
+    padding: 15px;
+}
