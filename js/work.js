@@ -1,6 +1,5 @@
 $(".indiv-thumbnail").hover(function(){
     var img = $(this).find('img');
-    $("#mydiv").css({top: '200px', left: '200px', position:'absolute'});
     $(this).find('.darken-background').css({
         'width' : img.width() + 'px',
         'height': img.height() + 'px',
