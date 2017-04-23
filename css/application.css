@@ -71,6 +71,19 @@ a:focus {
     padding: 10px;
 }
 
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .menuBar {
+        display: inline;
+        text-align: right;
+        padding: 10px;
+        font-size: medium;
+    }
+    .menuItem {
+        padding: 0 10px !important;
+    }
+}
+
 .whoami{
     padding-left: 10%;
     font-size: xx-large;

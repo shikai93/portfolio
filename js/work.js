@@ -5,13 +5,11 @@ function triggerThumbnail(headerId) {
     var img = header.find('img');
     if (!overlay.hasClass('hidden'))
     {
-        overlay.removeClass('onHover');
         img.css({
             'opacity' : '1'
         });
         overlay.addClass('hidden');
     } else {
-        overlay.addClass('onHover');
         img.css({
             'opacity' : '0.1'
         });
