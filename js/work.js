@@ -3,10 +3,12 @@ $(".indiv-thumbnail").hover(function(){
     $(this).find('.darken-background').css({
         'width' : img.width() + 'px',
         'height': img.height() + 'px',
-        'top': img.position().top + 'px',
-        'left': img.position().left +'px',
         'margin-left': img.css("margin-left")});
 });
+
+function triggerThumbnail(e) {
+    console.log(e);
+}
 
 (function($) {
     
