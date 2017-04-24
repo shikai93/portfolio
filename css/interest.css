@@ -40,7 +40,6 @@
 
 .interest-description {
     padding: 15px;
-    width: 100%;
 }
 
 .indiv-image {
@@ -77,5 +76,8 @@
     }
     .btn {
         font-size: x-small !important;
+    }
+    .single-row{
+        padding-top: 40%;
     }
 }
