@@ -38,6 +38,7 @@ hr {
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+    display: none;
 }
 
 a {
@@ -69,6 +70,7 @@ a:focus {
     font-size: x-large;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 10px;
+    -ms-overflow-style: none;
 }
 
 /* mobile phone */

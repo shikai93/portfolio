@@ -1,13 +1,15 @@
-var cw = $('.thumbnail-image').width();
-
-$('.thumbnail-image').css({
+$( window ).load(function() {
+    var cw = $('.thumbnail-image').width();
+    $('.thumbnail-image').css({
     'height': cw + 'px'
-});
+    });
 
-$('.thumbnail-header').css({
+    $('.thumbnail-header').css({
     'width' : cw + 'px',
     'height': cw + 'px'
+    });
 });
+
 
 function triggerThumbnail(divId) {
     var el = $('#' + divId);
