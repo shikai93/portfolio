@@ -80,4 +80,10 @@
     .single-row{
         padding-top: 40%;
     }
+    .thumbnail-header {
+        font-size: x-small;
+    }
+    .thumbnail-container {
+        padding: 5px; 
+    }
 }
