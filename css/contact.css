@@ -2,6 +2,16 @@
     margin-top: 15%;
 }
 
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .contact-caption{
+        font-size: x-small !important;
+    }
+    .contact-caption a{
+        font-size: xx-small !important;
+    }
+}
+
 .img-scale {
     max-width: 100%;
     width: 100%;

@@ -3,9 +3,14 @@
     width: 100%;
 }
 
-.content-height {
-    height: 100%;
-    width: 100%;
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .indiv-work-content-box {
+        font-size: x-small !important;
+    }
+    .btn {
+        font-size: x-small !important;
+    }
 }
 
 .contents {

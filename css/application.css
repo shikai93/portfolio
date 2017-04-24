@@ -77,10 +77,24 @@ a:focus {
         display: inline;
         text-align: right;
         padding: 0;
-        font-size: medium;
+        font-size: x-small;
+        margin-top: 5px;
     }
     .menuItem {
-        padding: 0 10px !important;
+        padding: 5px !important;
+    }
+    hr{
+        margin: 5px 0;
+        border-width: 2px;
+    }
+    .about-info-container {
+        font-size: x-small;
+    }
+    .whoami {
+        font-size: x-small !important;
+    }
+    .contents {
+        font-size: x-small;
     }
 }
 
