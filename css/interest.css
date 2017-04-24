@@ -77,11 +77,8 @@
     .btn {
         font-size: x-small !important;
     }
-    .single-row{
-        padding-top: 40%;
-    }
     .thumbnail-header {
-        font-size: x-small;
+        font-size: small;
     }
     .thumbnail-container {
         padding: 5px; 
