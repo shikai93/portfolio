@@ -86,13 +86,15 @@ a:focus {
         border-width: 2px;
     }
     .about-info-container {
-        font-size: x-small;
-        margin-top: 40% !important;
+        font-size: small;
+        margin-top: 25% !important;
         height: auto !important;
     }
     .about-image-container {
         font-size: x-small;
-        margin-top: 40%;
+        margin-top: 30%;
+        padding: 0 !important;
+        height: auto !important;
     }
     .whoami {
         font-size: x-small !important;
