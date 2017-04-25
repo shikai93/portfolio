@@ -23,7 +23,8 @@ function triggerThumbnail(headerId) {
         overlay.css({
             'width' : img.width() + 'px',
             'height': img.height() + 'px',
-            'margin-left': img.css("margin-left"),
+            'left' : '50%',
+            'margin-left': '-' + img.width() / 2 + 'px',
             });
         overlay.removeClass('hidden');
     }
