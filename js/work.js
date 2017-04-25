@@ -1,3 +1,10 @@
+$( window ).load(function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        $('#wndr-header').find('img').attr('src', "img/wndr-thumb-phone.jpg");
+        $('#secu-ring-header').find('img').attr('src', "img/secu-ring-thumb-phone.jpg");
+    }
+});
+
 function triggerThumbnail(headerId) {
     
     var header = $('#' + headerId);
@@ -11,7 +18,7 @@ function triggerThumbnail(headerId) {
         overlay.addClass('hidden');
     } else {
         img.css({
-            'opacity' : '0.1'
+            'opacity' : '0.2'
         });
         overlay.css({
             'width' : img.width() + 'px',
@@ -20,7 +27,6 @@ function triggerThumbnail(headerId) {
             });
         overlay.removeClass('hidden');
     }
-    
 }
 
 (function($) {

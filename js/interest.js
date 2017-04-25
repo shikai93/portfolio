@@ -1,4 +1,9 @@
 $( window ).load(function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        $('.thumbnail-header').removeClass('hidden');
+        $('.thumbnail-header').addClass('phone');
+        $('.thumbnail-header').parent().find('img').css('opacity',0.7);
+    }
     var cw = $('.thumbnail-image').width();
     $('.thumbnail-image').css({
     'height': cw + 'px'
@@ -13,6 +18,9 @@ $( window ).load(function() {
 
 function triggerThumbnail(divId) {
     var el = $('#' + divId);
+    if (el.hasClass('phone')) {
+        return;
+    }
     if (el.hasClass('hidden')) {
         el.removeClass('hidden');
         el.parent().find('img').css('opacity',0.2);

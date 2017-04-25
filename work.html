@@ -41,13 +41,20 @@
             </div>
         </div>
         <div class="content-container">
+            <div class="row bg-container">
+                <div style="height:100%;">
+                    <img class="img-left-overlay" src="img/arduinoandpen.jpg">
+                    <img class="img-overlay" src="img/turtle.png"/>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="col-xs-12">
                         <div class="contents">
+                            
                             <div id="thumbnails">
                                 <div class="row work-contents">
-                                    <div class="col-xs-8 indiv-thumbnail"
+                                    <div class="indiv-thumbnail-new"
                                          id="wndr-header"
                                          onclick="openProject('wndr');">
                                         <div class='hidden darken-background'
@@ -56,10 +63,10 @@
                                                 Geo-based social application developed for clients
                                             </div>
                                         </div>
-                                        <img src="img/wndr-thumb.jpg" class='img-scale' onmouseover="triggerThumbnail('wndr-header')"/>
+                                        <img src="img/wndr-thumb.jpg" class='img-scale-new' onmouseover="triggerThumbnail('wndr-header')"/>
                                     </div>
 
-                                    <div class="col-xs-4 indiv-thumbnail"
+                                    <div class="indiv-thumbnail-new"
                                          id="trashifai-header"
                                          onclick="openProject('trashifai');">
                                         <div class='hidden darken-background'
@@ -68,13 +75,12 @@
                                                 Trashifai<br>The smart waste sorting bin
                                             </div>
                                         </div>
-                                        <img src="img/trashifai.jpg" class='img-scale' onmouseover="triggerThumbnail('trashifai-header')"/>
+                                        <img src="img/trashifai.jpg" class='img-scale-new' onmouseover="triggerThumbnail('trashifai-header')"/>
                                     </div>
                                     
                                 </div>
-                                <br>
                                 <div class="row work-contents">                     
-                                    <div class="col-xs-4 col-xs-offset-1 indiv-thumbnail"
+                                    <div class="indiv-thumbnail-new"
                                          id="illumination-header"
                                          onclick="openProject('illumination');">
                                         <div class='hidden darken-background'
@@ -83,10 +89,10 @@
                                                 Lighting Support and Control Design
                                             </div>
                                         </div>
-                                        <img src="img/illumination-thumb.jpg" class='img-scale' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>
+                                        <img src="img/illumination-thumb.jpg" class='img-scale-new' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>
                                     </div>
                                     
-                                    <div class="col-xs-7 indiv-thumbnail"
+                                    <div class="indiv-thumbnail-new"
                                          id="secu-ring-header"
                                          onclick="openProject('secu-ring');">
                                         <div class='hidden darken-background'
@@ -95,10 +101,67 @@
                                                 Software Development Internship in Berlin
                                             </div>
                                         </div>
-                                        <img src="img/secu-ring1.jpg" class='img-scale' onmouseover="triggerThumbnail('secu-ring-header')"/>
+                                        <img src="img/secu-ring.jpg" class='img-scale-new' onmouseover="triggerThumbnail('secu-ring-header')"/>
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
+                            <!--<div id="thumbnails">-->
+                            <!--    <div class="row work-contents">-->
+                            <!--        <div class="col-xs-8 indiv-thumbnail"-->
+                            <!--             id="wndr-header"-->
+                            <!--             onclick="openProject('wndr');">-->
+                            <!--            <div class='hidden darken-background'-->
+                            <!--                 onmouseout="triggerThumbnail('wndr-header')">-->
+                            <!--                <div class="caption">-->
+                            <!--                    Geo-based social application developed for clients-->
+                            <!--                </div>-->
+                            <!--            </div>-->
+                            <!--            <img src="img/wndr-thumb.jpg" class='img-scale' onmouseover="triggerThumbnail('wndr-header')"/>-->
+                            <!--        </div>-->
+                            <!---->
+                            <!--        <div class="col-xs-4 indiv-thumbnail"-->
+                            <!--             id="trashifai-header"-->
+                            <!--             onclick="openProject('trashifai');">-->
+                            <!--            <div class='hidden darken-background'-->
+                            <!--                 onmouseout="triggerThumbnail('trashifai-header')">-->
+                            <!--                <div class="caption">-->
+                            <!--                    Trashifai<br>The smart waste sorting bin-->
+                            <!--                </div>-->
+                            <!--            </div>-->
+                            <!--            <img src="img/trashifai.jpg" class='img-scale' onmouseover="triggerThumbnail('trashifai-header')"/>-->
+                            <!--        </div>-->
+                            <!--        -->
+                            <!--    </div>-->
+                            <!--    <br>-->
+                            <!--    <div class="row work-contents">                     -->
+                            <!--        <div class="col-xs-4 col-xs-offset-1 indiv-thumbnail"-->
+                            <!--             id="illumination-header"-->
+                            <!--             onclick="openProject('illumination');">-->
+                            <!--            <div class='hidden darken-background'-->
+                            <!--                 onmouseout="triggerThumbnail('illumination-header')">-->
+                            <!--                <div class="caption">-->
+                            <!--                    Lighting Support and Control Design-->
+                            <!--                </div>-->
+                            <!--            </div>-->
+                            <!--            <img src="img/illumination-thumb.jpg" class='img-scale' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>-->
+                            <!--        </div>-->
+                            <!--        -->
+                            <!--        <div class="col-xs-7 indiv-thumbnail"-->
+                            <!--             id="secu-ring-header"-->
+                            <!--             onclick="openProject('secu-ring');">-->
+                            <!--            <div class='hidden darken-background'-->
+                            <!--                 onmouseout="triggerThumbnail('secu-ring-header')">-->
+                            <!--                <div class="caption">-->
+                            <!--                    Software Development Internship in Berlin-->
+                            <!--                </div>-->
+                            <!--            </div>-->
+                            <!--            <img src="img/secu-ring1.jpg" class='img-scale' onmouseover="triggerThumbnail('secu-ring-header')"/>-->
+                            <!--        </div>-->
+                            <!--    </div>-->
+                            <!--</div>-->
                             <div class="hidden" id="indiv-proj">
                                 <div class="row indiv-work" id="wndr">
                                     <div class="col-md-12 proj-heading">
@@ -107,7 +170,7 @@
                                     <div class="row">
                                     <div class="col-md-6 indiv-work">
                                         <div class="image-container">
-                                            <img src="img/wndr.jpg" class='image-indiv-scale'>
+                                            <img src="img/wndr-thumb.jpg" class='image-indiv-scale'>
                                         </div>
                                         <div class="button-photos">
                                             <button class="btn btn-danger btn-photos" id="wndr-photos">
