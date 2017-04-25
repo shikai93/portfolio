@@ -104,7 +104,7 @@ a:focus {
     }
     .img-left-overlay {
         width: 80% !important;
-        opacity: 0.2;
+        opacity: 0.2 !important;
     }
 }
 
@@ -144,9 +144,10 @@ a:focus {
 
 .img-left-overlay {
     position: absolute;
-    width: 30%;
+    width: auto;
     height: 100%;
     left: 0;
+    opacity: 0.7;
 }
 
 .bg-container{
