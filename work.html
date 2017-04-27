@@ -26,10 +26,7 @@
     <body>
         <div class="container">
             <div class="row" id="navbar">
-                <div class="col-md-4 col-xs-3">
-                    <img src="img/avatar.JPG" style="display: inline; max-width: 100%;"/>
-                </div>
-                <div class="col-md-8 col-xs-9 menuBar">
+                <div class="col-xs-12 menuBar">
                     <ul class="list-inline">
                         <li class="menuItem"><a href="index.html">About Me</a></li>
                         <li class="menuItem selected"><a href="work.html">Work</a></li>
@@ -43,7 +40,6 @@
         <div class="content-container">
             <div class="row bg-container">
                 <div style="height:100%;">
-                    <img class="img-left-overlay" src="img/arduinoandpen.jpg">
                     <img class="img-overlay" src="img/turtle.png"/>
                 </div>
             </div>
@@ -54,18 +50,7 @@
                             
                             <div id="thumbnails">
                                 <div class="row work-contents">
-                                    <div class="indiv-thumbnail-new"
-                                         id="wndr-header"
-                                         onclick="openProject('wndr');">
-                                        <div class='hidden darken-background'
-                                             onmouseout="triggerThumbnail('wndr-header')">
-                                            <div class="caption">
-                                                Geo-based social application developed for clients
-                                            </div>
-                                        </div>
-                                        <img src="img/wndr-thumb.jpg" class='img-scale-new' onmouseover="triggerThumbnail('wndr-header')"/>
-                                    </div>
-
+                                    
                                     <div class="indiv-thumbnail-new"
                                          id="trashifai-header"
                                          onclick="openProject('trashifai');">
@@ -76,6 +61,17 @@
                                             </div>
                                         </div>
                                         <img src="img/trashifai.jpg" class='img-scale-new' onmouseover="triggerThumbnail('trashifai-header')"/>
+                                    </div><div class="indiv-thumbnail-new"
+                                         
+                                         id="wndr-header"
+                                         onclick="openProject('wndr');">
+                                        <div class='hidden darken-background'
+                                             onmouseout="triggerThumbnail('wndr-header')">
+                                            <div class="caption">
+                                                Geo-based social application developed for clients
+                                            </div>
+                                        </div>
+                                        <img src="img/wndr-thumb.png" class='img-scale-new' onmouseover="triggerThumbnail('wndr-header')"/>
                                     </div>
                                     
                                 </div>
@@ -90,9 +86,8 @@
                                             </div>
                                         </div>
                                         <img src="img/illumination-thumb.jpg" class='img-scale-new' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>
-                                    </div>
-                                    
-                                    <div class="indiv-thumbnail-new"
+                                    </div><div class="indiv-thumbnail-new"
+                                         
                                          id="secu-ring-header"
                                          onclick="openProject('secu-ring');">
                                         <div class='hidden darken-background'
@@ -106,63 +101,57 @@
                                 </div>
                             </div>
                             
-                            
-                            
-                            <!--<div id="thumbnails">-->
-                            <!--    <div class="row work-contents">-->
-                            <!--        <div class="col-xs-8 indiv-thumbnail"-->
-                            <!--             id="wndr-header"-->
-                            <!--             onclick="openProject('wndr');">-->
-                            <!--            <div class='hidden darken-background'-->
-                            <!--                 onmouseout="triggerThumbnail('wndr-header')">-->
-                            <!--                <div class="caption">-->
-                            <!--                    Geo-based social application developed for clients-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <img src="img/wndr-thumb.jpg" class='img-scale' onmouseover="triggerThumbnail('wndr-header')"/>-->
-                            <!--        </div>-->
-                            <!---->
-                            <!--        <div class="col-xs-4 indiv-thumbnail"-->
-                            <!--             id="trashifai-header"-->
-                            <!--             onclick="openProject('trashifai');">-->
-                            <!--            <div class='hidden darken-background'-->
-                            <!--                 onmouseout="triggerThumbnail('trashifai-header')">-->
-                            <!--                <div class="caption">-->
-                            <!--                    Trashifai<br>The smart waste sorting bin-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <img src="img/trashifai.jpg" class='img-scale' onmouseover="triggerThumbnail('trashifai-header')"/>-->
-                            <!--        </div>-->
-                            <!--        -->
-                            <!--    </div>-->
-                            <!--    <br>-->
-                            <!--    <div class="row work-contents">                     -->
-                            <!--        <div class="col-xs-4 col-xs-offset-1 indiv-thumbnail"-->
-                            <!--             id="illumination-header"-->
-                            <!--             onclick="openProject('illumination');">-->
-                            <!--            <div class='hidden darken-background'-->
-                            <!--                 onmouseout="triggerThumbnail('illumination-header')">-->
-                            <!--                <div class="caption">-->
-                            <!--                    Lighting Support and Control Design-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <img src="img/illumination-thumb.jpg" class='img-scale' align="middle" onmouseover="triggerThumbnail('illumination-header')"/>-->
-                            <!--        </div>-->
-                            <!--        -->
-                            <!--        <div class="col-xs-7 indiv-thumbnail"-->
-                            <!--             id="secu-ring-header"-->
-                            <!--             onclick="openProject('secu-ring');">-->
-                            <!--            <div class='hidden darken-background'-->
-                            <!--                 onmouseout="triggerThumbnail('secu-ring-header')">-->
-                            <!--                <div class="caption">-->
-                            <!--                    Software Development Internship in Berlin-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <img src="img/secu-ring1.jpg" class='img-scale' onmouseover="triggerThumbnail('secu-ring-header')"/>-->
-                            <!--        </div>-->
-                            <!--    </div>-->
-                            <!--</div>-->
                             <div class="hidden" id="indiv-proj">
+                                                                
+                                <div class="row indiv-work" id="trashifai">
+                                    <div class="col-md-12 proj-heading">
+                                        Trashifai
+                                    </div>
+                                    <div class="col-md-6 indiv-work">
+                                        <div class="image-container">
+                                            <img src="img/trashifai.jpg" class='image-indiv-scale'>
+                                        </div>
+                                        <div class="button-photos">
+                                            <button class="btn btn-danger btn-photos" id="trashifai-photos">
+                                                View Photos
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-6 indiv-work-content-box">
+                                        <div class="indiv-work-content">
+                                            <p>
+                                                <strong>Project Overview</strong>
+                                                <br><br>Trashifai was an idea conceptualized by my team during Wildhacks : 2016, a hackathon organized by Northwestern University that attracted more than 400 participants.
+                                                <br><br>Trashifai is a smart waste sorting bin that detects and identifies waste being discarded into the bin. It would then determine if the waste is indeed a recyclable object and sorts it accordingly.
+                                                <br><br>Trashifai was built on Clarifai, an image recognition software built on artificial intelligence, and Arduino for hardware interface.
+                                                <br><br>Find out more about Trashifai <a class="normal-a" href="http://trashifai.me/">here.</a>
+                                            </p>
+                                            <br>
+                                            <p>
+                                                <strong>Lessons Learnt</strong>
+                                                <br><br><i class="fa fa-desktop" aria-hidden="true"></i> Front End Programming
+                                                <br><br><i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
+                                                <br><br><i class="fa fa-wrench" aria-hidden="true"></i> Rapid Prototyping
+                                            </p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
+                                            <p>
+                                                <strong>Challenges</strong>
+                                                <br><br>The 48 hour time limit was a challenge and forces us to ideate and prototype quickly. Initially, we could not brainstorm effectively to identify a potential problem that we want to solve. However, we managed to
+                                                look back at our past experiences and eventually conceptualize Trashifai.
+                                                <br><br>Trashifai was inspired by our experience in Germany, which takes recycling seriously. We often found it difficult to determine if an object is recyclable; for instance, although pizza boxes are made of cardboard, they cannot be recycled since they are soiled with grease and food items.
+                                                Thus, we created a smart waste bin to help us identify the recyclables and sort them accordingly.
+                                                <br><br>My role in the team was the creation of a mobile application that allows users to take a photo of the trash and identify if it is recyclable, hardware prototyping and the creation of our team website.
+                                            </p>
+                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                                
                                 <div class="row indiv-work" id="wndr">
                                     <div class="col-md-12 proj-heading">
                                         WNDR
@@ -178,7 +167,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 indiv-work-content-box">
+                                    <div class="col-md-6 indiv-work-content-box">
                                         <div class="indiv-work-content">
                                             <p>
                                                 <strong>Project Overview</strong>
@@ -199,7 +188,7 @@
                                     </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
+                                        <div class="col-md-11 col-md-offset-1 indiv-bottom indiv-work-content-box">
                                             <p>
                                                 <strong>Challenges</strong>
                                                 <br><br>Our team had trouble adopting AGILE principles initially. We could not identify areas of improvement and were slow on adapting new working processes.
@@ -210,55 +199,6 @@
                                         </div>                                            
                                     </div>
                                 </div>
-                                
-                                <div class="row indiv-work" id="trashifai">
-                                    <div class="col-md-12 proj-heading">
-                                        Trashifai
-                                    </div>
-                                    <div class="col-md-5 col-md-offset-1 indiv-work">
-                                        <div class="image-container">
-                                            <img src="img/trashifai.jpg" class='image-indiv-scale'>
-                                        </div>
-                                        <div class="button-photos">
-                                            <button class="btn btn-danger btn-photos" id="trashifai-photos">
-                                                View Photos
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                    <div class="col-md-5 indiv-work-content-box">
-                                        <div class="indiv-work-content">
-                                            <p>
-                                                <strong>Project Overview</strong>
-                                                <br><br>Trashifai was an idea conceptualized by my team during Wildhacks : 2016, a hackathon organized by Northwestern University that attracted more than 400 participants.
-                                                <br><br>Trashifai is a smart waste sorting bin that detects and identifies waste being discarded into the bin. It would then determine if the waste is indeed a recyclable object and sorts it accordingly.
-                                                <br><br>Trashifai was built on Clarifai, an image recognition software built on artificial intelligence, and Arduino for hardware interface.
-                                                <br><br>Find out more about Trashifai <a class="normal-a" href="http://trashifai.me/">here.</a>
-                                            </p>
-                                            <br>
-                                            <p>
-                                                <strong>Lessons Learnt</strong>
-                                                <br><br><i class="fa fa-desktop" aria-hidden="true"></i> Front End Programming
-                                                <br><br><i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
-                                                <br><br><i class="fa fa-wrench" aria-hidden="true"></i> Rapid Prototyping
-                                            </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                        <div class="row">
-                                            <div class="col-md-11 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
-                                                <p>
-                                                    <strong>Challenges</strong>
-                                                    <br><br>The 48 hour time limit was a challenge and forces us to ideate and prototype quickly. Initially, we could not brainstorm effectively to identify a potential problem that we want to solve. However, we managed to
-                                                    look back at our past experiences and eventually conceptualize Trashifai.
-                                                    <br><br>Trashifai was inspired by our experience in Germany, which takes recycling seriously. We often found it difficult to determine if an object is recyclable; for instance, although pizza boxes are made of cardboard, they cannot be recycled since they are soiled with grease and food items.
-                                                    Thus, we created a smart waste bin to help us identify the recyclables and sort them accordingly.
-                                                    <br><br>My role in the team was the creation of a mobile application that allows users to take a photo of the trash and identify if it is recyclable, hardware prototyping and the creation of our team website.
-                                                </p>
-                                                <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
-                                            </div>                                            
-                                        </div>
-                                    </div>
                                 
                                 <div class="row indiv-work" id="illumination">
                                     <div class="col-md-12 proj-heading">

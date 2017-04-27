@@ -1,9 +1,9 @@
 $( window ).load(function() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        $('.thumbnail-header').removeClass('hidden');
-        $('.thumbnail-header').addClass('phone');
-        $('.thumbnail-header').parent().find('img').css('opacity',0.7);
-    }
+    //if (window.matchMedia("(max-width: 768px)").matches) {
+    //    $('.thumbnail-header').removeClass('hidden');
+    //    $('.thumbnail-header').addClass('phone');
+    //    $('.thumbnail-header').parent().find('img').css('opacity',0.7);
+    //}
     var cw = $('.thumbnail-image').width();
     $('.thumbnail-image').css({
     'height': cw + 'px'
@@ -23,7 +23,7 @@ function triggerThumbnail(divId) {
     }
     if (el.hasClass('hidden')) {
         el.removeClass('hidden');
-        el.parent().find('img').css('opacity',0.2);
+        el.parent().find('img').css('opacity',0.1);
     } else {
         el.addClass('hidden');
         el.parent().find('img').css('opacity',1);

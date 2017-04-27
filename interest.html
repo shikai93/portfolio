@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/interest.css">
         <link rel="stylesheet" href="css/application.css">
@@ -13,8 +14,6 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Source+Sans+Pro" rel="stylesheet">
-        <!-- font-family: 'Gloria Hallelujah', cursive;
-        font-family: 'Source Sans Pro', sans-serif;-->
         
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.js"  type="text/javascript"></script>
@@ -30,10 +29,7 @@
     <body>
         <div class="container">
             <div class="row" id="navbar">
-                <div class="col-md-4 col-xs-3">
-                    <img src="img/avatar.JPG" style="display: inline; max-width: 100%;"/>
-                </div>
-                <div class="col-md-8 col-xs-9 menuBar">
+                <div class="col-xs-12 menuBar">
                     <ul class="list-inline">
                         <li class="menuItem"><a href="index.html">About Me</a></li>
                         <li class="menuItem"><a href="work.html">Work</a></li>
@@ -47,7 +43,7 @@
         <div class="content-container">
             <div class="row bg-container">
                 <div style="height:100%;">
-                    <img class="img-left-overlay" src="img/arduinoandpen.jpg">
+                    <!--<img class="img-left-overlay" src="img/arduinoandpen.jpg">-->
                     <img class="img-overlay" src="img/turtle.png"/>
                 </div>
             </div>
@@ -61,7 +57,7 @@
                                         <div class="hidden thumbnail-header" onmouseout="triggerThumbnail('dance-header');" id="dance-header" onclick="triggerInterest('dance');">
                                             Dance
                                         </div>
-                                        <img src="img/dance.jpg" onmouseover="triggerThumbnail('dance-header');" class="thumbnail-image"/>
+                                        <img src="img/dance-thumb.png" onmouseover="triggerThumbnail('dance-header');" onclick="triggerInterest('dance');" class="thumbnail-image"/>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-xs-6 thumbnail-container">
@@ -69,7 +65,7 @@
                                         <div class="hidden thumbnail-header" onmouseout="triggerThumbnail('sketching-header');" id="sketching-header" onclick="triggerInterest('sketch');">
                                             Draw
                                         </div>
-                                        <img src="img/sketch-thumb.jpg" onmouseover="triggerThumbnail('sketching-header');" class="thumbnail-image"/>
+                                        <img src="img/draw-thumb.png" onmouseover="triggerThumbnail('sketching-header');" class="thumbnail-image" onclick="triggerInterest('sketch');"/>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-0 thumbnail-container">
@@ -80,7 +76,7 @@
                                              onclick="triggerInterest('travel');">
                                             Travel
                                         </div>
-                                        <img src="img/rinjani2.jpg" onmouseover="triggerThumbnail('travelling-header');" class="thumbnail-image"/>
+                                        <img src="img/travel-thumb.png" onmouseover="triggerThumbnail('travelling-header');" onclick="triggerInterest('travel');" class="thumbnail-image"/>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +113,7 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <br>
-                                        <img src="img/sketch1.jpg" class="indiv-image">
+                                        <img src="img/sketch-thumb.jpg" class="indiv-image">
                                         <div class="btn-photos">
                                             <button class="btn btn-danger" id="sketch-photos">
                                                 View Photos
@@ -126,7 +122,7 @@
                                     </div>
                                     <div class="col-md-8 interest-description">
                                         <div class="col-md-12">
-                                            I have always loved reading comics, even now. I was amazed by how comic artists manage to draw well consistently in every single comic frame. Thus I started out to learn how to draw cartoon characters.
+                                            Reading comics has been my hobby. I am always amazed by how comic artists manage to draw well consistently in every comic frame. Thus I started out to learn how to draw cartoon characters.
                                             This was in line with my childhood dream of becoming a game designer and thus, drawing slowly turned into a hobby.
                                             <br><br>However, since I did not take any drawing classes, I soon fell out of practise with drawing and was distracted by school work and games.
                                             It was only until recently where I got back in touch with my drawing interest due to my class on industrial design, where we had to sketch various products. I found incredible joy in creating new drawings and took pride in that.

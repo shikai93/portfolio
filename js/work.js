@@ -138,7 +138,7 @@ function triggerThumbnail(headerId) {
 
 function openProject(project){
     $('#indiv-proj').removeClass('hidden');
-    var offsetNo = $('#' + project).offset().top - $('#wndr').offset().top;
+    var offsetNo = $('#' + project).offset().top - $('#trashifai').offset().top;
     $('.contents').animate({
            scrollTop: offsetNo + 'px'
        }, 'fast');
