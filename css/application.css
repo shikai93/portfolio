@@ -86,7 +86,7 @@ a:focus {
         border-width: 2px;
     }
     .about-info-container {
-        font-size: small;
+        font-size: x-small !important;
         height: auto !important;
     }
     .about-image-container {
@@ -95,13 +95,14 @@ a:focus {
 
     }
     .whoami {
-        font-size: x-small !important;
+        font-size: small !important;
     }
     .contents {
         font-size: x-small;
     }
     .img-overlay{
-        opacity: 0.4;
+        content:url("../img/turtle-phone.png");
+        opacity: 0.2;
     }
 }
 

@@ -1,4 +1,4 @@
-window.setInterval(animateTurtle, 500);
+window.setInterval(animateTurtle, 300);
 var image= $('#animate');
 var frame = 0;
 function animateTurtle() {
