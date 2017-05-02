@@ -52,7 +52,7 @@ a:focus {
 .hidden {
     display: none;
     opacity: 0;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 .contents {
@@ -87,14 +87,12 @@ a:focus {
     }
     .about-info-container {
         font-size: small;
-        margin-top: 25% !important;
         height: auto !important;
     }
     .about-image-container {
         font-size: x-small;
-        margin-top: 30%;
-        padding: 0 !important;
         height: auto !important;
+
     }
     .whoami {
         font-size: x-small !important;
@@ -102,15 +100,14 @@ a:focus {
     .contents {
         font-size: x-small;
     }
-    .img-left-overlay {
-        width: 80% !important;
-        opacity: 0.2 !important;
+    .img-overlay{
+        opacity: 0.4;
     }
 }
 
 .whoami{
     padding-left: 10%;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     line-height: 2;
 }
@@ -128,6 +125,7 @@ a:focus {
 }
 
 .about-info-container {
+    font-size: large;
     margin-top: 10px;
     height: 90%;
     padding: 15px;
@@ -139,15 +137,6 @@ a:focus {
     max-width: 100%;
     max-height: 100%;
     right: 0;
-}
-
-.img-left-overlay {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    left: 0;
-    opacity: 0.5;
-    z-index: 0;
 }
 
 .bg-container{

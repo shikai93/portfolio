@@ -63,6 +63,26 @@ function triggerThumbnail(headerId) {
         type: 'image' // this is default type
     });
     
+        $('#illumination-photos').magnificPopup({
+        items: [
+          {
+            src: 'img/illumination1.jpg',
+            title: 'Initial Prototype'
+          },
+          {
+            src: 'img/illumination2.jpg',
+            title: 'The electrical circuit built'
+          },
+          
+        ],
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1]
+        },
+        type: 'image' // this is default type
+    });
+    
     $('#secu-ring-photos').magnificPopup({
         items: [
           {

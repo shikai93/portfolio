@@ -1,0 +1,49 @@
+.bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-left-overlay{
+    height: 100%;
+    max-width: 33%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.img-right-overlay{
+    height: 100%;
+    max-width: 33%;
+    position: absolute;
+    right: 0;
+}
+
+.img-avatar{
+    width: 100%;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.avatar-container {
+    padding: 5vh 0;
+    border-right: solid;
+    border-right-color: rgb(31,78,121);
+    border-right-width: 5px;
+}
+
+.namecard-container{
+    margin-top: 25vh;
+}
+
+.descrip-container{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Port Lligat Slab', serif;
+    font-size: large;
+}
+
+h1{
+    font-size: 3em;
+    padding: 10px;
+    font-weight: bold;
+}
