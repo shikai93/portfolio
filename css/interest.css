@@ -77,7 +77,10 @@
 
 @media all and (max-width: 768px) {
     .interest-heading {
-        font-size: small;
+        font-size: medium;
+    }
+    .interest-description{
+        font-size: x-small;
     }
     .btn {
         font-size: x-small !important;
