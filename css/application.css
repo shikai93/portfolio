@@ -101,7 +101,7 @@ a:focus {
         font-size: x-small;
     }
     .img-overlay{
-        content:url("../img/turtle-phone.PNG");
+        content:url("../img/turtle-phone.png");
         opacity: 0.2;
     }
 }
