@@ -32,109 +32,114 @@ function triggerThumbnail(headerId) {
 
 (function($) {
     
-    $('#wndr-photos').magnificPopup({
-        items: [
-          {
-            src: 'img/wndr.jpg',
-            title: 'Thoughts Page'
-          },
-          {
-            src: 'img/wndr1.jpg',
-            title: 'Details Page'
-          },
-          {
-            src: 'img/wndr2.jpg',
-            title: 'Home Page'
-          },
-          {
-            src: 'img/wndr3.jpg',
-            title: 'Share Page'
-          },
-          {
-            src: 'img/wndr4.jpg',
-            title: 'feed Page'
-          }
-        ],
-        gallery: {
-          enabled: true,
+    var wndrData = [
+        {
+          src: 'img/wndr-thumb.jpg',
+          title: 'Overall screenshots of the application'
+        },
+        {
+          src: 'img/wndr.jpg',
+          title: 'Thoughts Page'
+        },
+        {
+          src: 'img/wndr1.jpg',
+          title: 'Details Page'
+        },
+        {
+          src: 'img/wndr3.jpg',
+          title: 'Share Page'
+        },
+    ];
+    $('.wndr-thumbs a').each(function () {
+        var $this = $(this);
+        index = $this.data('index');
+        $this.magnificPopup({
+            items: wndrData,
+            index : index,
+            gallery : {
+              enabled: true,
+              navigateByImgClick: true,
+              preload: [0, 1]
+            },
+        type: 'image',
+        });
+    });
+    
+    var illuData = [
+        {
+          src: 'img/illumination1.jpg',
+          title: 'Initial Prototype'
+        },
+        {
+          src: 'img/illumination1.jpg',
+          title: 'Initial Prototype'
+        },
+        {
+          src: 'img/illumination2.jpg',
+          title: 'The electrical circuit built'
+        },
+        {
+          src: 'img/illumination3.mp4',
+          title: 'The electrical control mockup',
+          type: 'iframe'
+        }
+    ];
+    $('.illu-thumbs a').each(function () {
+        var $this = $(this);
+        index = $this.data('index');
+        $this.magnificPopup({
+            items: illuData,
+            index : index,
+            gallery : {
+            enabled: true,
+              navigateByImgClick: true,
+              preload: [0, 1]
+        },
+        type: 'image',
+    });
+    });
+
+    var secuData = [
+        {
+          src: 'img/secu-ring1.jpg',
+          title: ""
+        },
+        {
+          src: 'img/secu-ring2.jpg',
+          title: "My Appreciation Gift with colleagues' signatures"
+        },
+        {
+          src: 'img/secu-ring3.jpg',
+          title: "Implementation of the trend chart using google charts API"
+        },
+        {
+          src: 'img/secu-ring4.jpg',
+          title: "Implementation of the company model"
+        },
+    ];
+    $('.secu-thumbs a').each(function () {
+        var $this = $(this);
+         index = $this.data('index');
+         $this.magnificPopup({
+        items: secuData,
+        index : index,
+        gallery : {
+        enabled: true,
           navigateByImgClick: true,
           preload: [0, 1]
         },
-        type: 'image' // this is default type
+        type: 'image',
+    });
     });
     
-        $('#illumination-photos').magnificPopup({
-        items: [
-          {
-            src: 'img/illumination1.jpg',
-            title: 'Initial Prototype'
-          },
-          {
-            src: 'img/illumination2.jpg',
-            title: 'The electrical circuit built'
-          },
-          
-        ],
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        type: 'image' // this is default type
-    });
-    
-    $('#secu-ring-photos').magnificPopup({
-        items: [
-          {
-            src: 'img/secu-ring1.jpg',
-            title: 'Secu-ring'
-          },
-          {
-            src: 'img/secu-ring2.jpg',
-            title: "My Appreciation Gift with colleagues' signatures"
-          },
-          {
-            src: 'img/secu-ring3.jpg',
-            title: "Implementation of the trend chart using google charts API"
-          },
-          {
-            src: 'img/secu-ring4.jpg',
-            title: "Implementation of the company model"
-          },
-          {
-            src: 'img/secu-ring5.jpg',
-            title: "Implementation of PDF export functions"
-          },
-        ],
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        type: 'image' // this is default type
-    });
-    
-    $('#trashifai-photos').magnificPopup({
-        items: [
+    var trashifaiData = [
           {
             src: 'img/trashifai.jpg',
             title: 'Trashifai'
           },
           {
-            src: 'img/trashifai3.jpg',
-            title: 'Our Team'
-          },
-          {
-            src: 'img/trashifai4.jpg',
-            title: 'Working through the night'
-          },
-          {
-            src: 'img/trashifai5.jpg',
-            title: 'Team hard at work'
-          },
-          {
             src: 'img/trashifai2.jpg',
-            title: 'Our Prototype'
+            title: 'Trashifai'
           },
           {
             src: 'img/trashifai.mp4',
@@ -142,17 +147,23 @@ function triggerThumbnail(headerId) {
             type: 'iframe'
           },
           {
-            src: 'https://drive.google.com/file/d/0B_v-8cJZYSKEVjFlcGNILWpnclE/preview',
-            title: 'Our promotional video',
-            type: 'iframe'
+            src: 'img/trashifai5.jpg',
+            title: 'Working through the night'
           },
-        ],
-        gallery: {
-          enabled: true,
+        ];
+    $('.trashifai-thumbs a').each(function () {
+        var $this = $(this);
+         index = $this.data('index');
+         $this.magnificPopup({
+        items: trashifaiData,
+        index : index,
+        gallery : {
+        enabled: true,
           navigateByImgClick: true,
           preload: [0, 1]
         },
-        type: 'image' // this is default type
+        type: 'image',
+    });
     });
 })(jQuery);
 
@@ -161,7 +172,7 @@ function openProject(project){
     var offsetNo = $('#' + project).offset().top - $('#trashifai').offset().top;
     $('.contents').animate({
            scrollTop: offsetNo + 'px'
-       }, 'fast');
+       }, 'medium');
     $('#thumbnails').addClass('hidden');
 }
     
@@ -170,3 +181,31 @@ function thumbnailView() {
     $('#indiv-proj').addClass('hidden');
     $('#thumbnails').removeClass('hidden');
 }
+
+$( "#indiv-proj" ).hover(
+  blink,
+  function() {
+    $('.dropdown-img').css('opacity', 0);
+  }
+);
+
+function blink() {
+    var dropdownImg = $('.dropdown-img');
+    var contents = $('.contents');
+    if (parseInt(contents[0].scrollHeight - contents.scrollTop()) > contents.outerHeight() + 50) {
+        dropdownImg.css('opacity', 0.3);
+    }
+}
+
+var scrolldelay;
+$('.down-icon').hover(
+    function() {
+        var contents = $('.contents');
+        scrolldelay = setInterval(function(){
+            contents.scrollTop(contents.scrollTop() + 1);
+        },10);
+    },
+    function() {
+        clearInterval(scrolldelay);
+    }
+);

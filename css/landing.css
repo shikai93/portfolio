@@ -4,13 +4,6 @@
     width: 100vw;
 }
 
-.img-left-overlay{
-    height: 100%;
-    max-width: 33%;
-    opacity: 0.3;
-    position: absolute;
-}
-
 .img-right-overlay{
     height: 100%;
     max-width: 33%;
@@ -24,50 +17,43 @@
     padding: 5%;
 }
 
-.avatar-container {
-    padding: 5vh 0;
-    border-right: solid;
-    border-right-color: rgb(31,78,121);
-    border-right-width: 5px;
-}
-
-.namecard-container{
-    margin-top: 25vh;
+.thumbnail-container {
+    padding: 5% 5%;
 }
 
 .descrip-container{
-    margin-top: 10%;
     text-align: center;
     font-family: 'Port Lligat Slab', serif;
     font-size: large;
 }
 
+.btn-text {
+    font-size: large;
+}
+
 h1{
-    font-size: 3em;
+    font-size: 4em;
     padding: 10px;
     font-weight: bold;
 }
 
 @media all and (max-width: 768px) {
-    .namecard-container{
-        margin-top: 35vh;
-    }
     .descrip-container {
-        margin-top: 5%;
         font-size: x-small !important;
+    }
+    
+    .pad-top {
+        padding-top: 40%;
     }
     .btn{
         font-size: inherit;
-    }
-    .img-left-overlay{
-    opacity: 0;
     }
 
     .img-right-overlay{
         height: 50%;
         max-width: 50%;
         position: absolute;
-        top: 50%;
+        top: 30%;
         right: 0;
     }
     h1{

@@ -1,9 +1,5 @@
 $( window ).load(function() {
-    //if (window.matchMedia("(max-width: 768px)").matches) {
-    //    $('.thumbnail-header').removeClass('hidden');
-    //    $('.thumbnail-header').addClass('phone');
-    //    $('.thumbnail-header').parent().find('img').css('opacity',0.7);
-    //}
+
     var cw = $('.thumbnail-image').width();
     $('.thumbnail-image').css({
     'height': cw + 'px'
@@ -44,9 +40,7 @@ function thumbnailView(interestId) {
     $('#interests').addClass('hidden');
 }
 
-$('#dance-photos').magnificPopup({
-        items: [
-          {
+var danceData = [{
             src: 'img/dance.jpg',
             title: 'Performance for a school event organized for my coursemates'
           },
@@ -55,73 +49,78 @@ $('#dance-photos').magnificPopup({
             title: 'Masterclass with Locking Saga'
           },
           {
+            src: 'img/dance4.mp4',
+            title: 'Our showcase performance for NTU Funk Jam 2016',
+            type: 'iframe'
+          },
+          {
             src: 'img/dance2.jpg',
             title: 'Masterclass with A-Meng'
           },
-          {
-            src: 'img/dance3.jpg',
-            title: 'My first performance on a big stage in 2015'
-          },
-          {
-            src: $('<div class="white-popup"><video controls><source src = "img/dance4.mp4" type="video/mp4"></video></div>'),
-            title: 'Our showcase performance for NTU Funk Jam 2016',
-            type: 'inline'
-          },
-          {
-            src: $('<div class="white-popup"><video controls><source src = "img/dance5.mp4" type="video/mp4"></video></div>'),
-            title: 'My freestyle video at B-Series 2017',
-            type: 'inline'
-          },
-        ],
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        type: 'image' // this is default type
-    });
+          ];
 
-$('#sketch-photos').magnificPopup({
-        items: [
-          {
-            src: 'img/sketch1.jpg',
-            title: 'Turtle busy coding'
-          },
-          {
-            src: 'img/background.jpg',
-            title: 'First sketch of the turtle'
-          },
-          {
-            src: 'img/sketch2.jpg',
-            title: 'Happy turtle'
-          },
-          {
-            src: 'img/sketch3.jpg',
-            title: 'Shy turtle'
-          },
-          {
-            src: 'img/sketch4.jpg',
-            title: 'My shoe design final iteration for the industrial design class'
-          },
-          {
-            src: 'img/sketch6.jpg',
-            title: 'Shoe design 1st iteration'
-          },
-          {
-            src: 'img/sketch5.jpg',
-            title: 'Shoe design 2nd iteration'
-          },
-        ],
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        type: 'image' // this is default type
+$('.dance-thumbs a').each(function () {
+    var $this = $(this);
+    index = $this.data('index');
+    $this.magnificPopup({
+    items: danceData,
+    index : index,
+    gallery : {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    },
+    type: 'image',
     });
+});
 
-$('#travel-photos').magnificPopup({
-        items: [
+var sketchData = [
+        {
+        src: 'img/sketch-thumb.jpg',
+        title: 'Sketching Tools'
+        },
+        {
+        src: 'img/sketch1.jpg',
+        title: 'Turtle busy coding'
+        },
+        {
+        src: 'img/sketch3.jpg',
+        title: 'Shy turtle'
+        },
+        {
+        src: 'img/sketch2.jpg',
+        title: 'Happy turtle'
+        },
+        {
+        src: 'img/sketch4.jpg',
+        title: 'My shoe design final iteration for the industrial design class'
+        },
+        {
+        src: 'img/sketch5.jpg',
+        title: 'Shoe design 2nd iteration'
+        },
+        {
+        src: 'img/sketch6.jpg',
+        title: 'Shoe design 1st iteration'
+        },
+        ];
+
+$('.sketch-thumbs a').each(function () {
+    var $this = $(this);
+    index = $this.data('index');
+    $this.magnificPopup({
+    items: sketchData,
+    index : index,
+    gallery : {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    },
+    type: 'image',
+    });
+});
+
+var travelData = [
           {
             src: 'img/travel1.jpg',
             title: 'Arches National Park in United States'
@@ -131,8 +130,12 @@ $('#travel-photos').magnificPopup({
             title: 'Mount Rinjani at Indonesia'
           },
           {
-            src: 'img/jeju.jpg',
-            title: 'Cheong Jee Hyeon Waterfall in Jeju'
+            src: 'img/rinjani1.jpg',
+            title: 'Summit Climb of Mount Rinjani at Indonesia'
+          },
+          {
+            src: 'img/rinjani2.jpg',
+            title: 'Mount Rinjani at Indonesia'
           },
           {
             src: 'img/jeju1.jpg',
@@ -143,20 +146,49 @@ $('#travel-photos').magnificPopup({
             title: 'Typical Meal in Korea'
           },
           {
-            src: 'img/rinjani1.jpg',
-            title: 'Summit Climb of Mount Rinjani at Indonesia'
-          },{
-            src: 'img/rinjani2.jpg',
-            title: 'Mount Rinjani at Indonesia'
-          },{
             src: 'img/berlin.jpg',
             title: 'Berlin Wall Graffiti'
-          },
-        ],
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0, 1]
-        },
-        type: 'image' // this is default type
+          },];
+
+$('.travel-thumbs a').each(function () {
+    var $this = $(this);
+    index = $this.data('index');
+    $this.magnificPopup({
+    items: travelData,
+    index : index,
+    gallery : {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    },
+    type: 'image',
     });
+});
+
+$( "#interests" ).hover(
+  blink,
+  function() {
+    $('.dropdown-img').css('opacity', 0);
+  }
+);
+
+function blink() {
+    var dropdownImg = $('.dropdown-img');
+    var contents = $('.contents');
+    if (parseInt(contents[0].scrollHeight - contents.scrollTop()) > contents.outerHeight() + 50) {
+        dropdownImg.css('opacity', 0.3);
+    }
+}
+
+var scrolldelay;
+$('.down-icon').hover(
+    function() {
+        var contents = $('.contents');
+        scrolldelay = setInterval(function(){
+            contents.scrollTop(contents.scrollTop() + 1);
+        },10);
+    },
+    function() {
+        clearInterval(scrolldelay);
+    }
+);

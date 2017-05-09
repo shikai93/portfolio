@@ -1,18 +1,18 @@
 .menuBar {
     display: inline;
     text-align: right;
-    padding: 30px 10px;
     font-size: x-large;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menuItem {
-    padding: 0 15px !important;
+    padding: 5px 15px !important;
 }
 
 hr {
   border-color: rgb(31,78,121);
   border-width: 5px;
+  margin: 0;
 }
 
 #navbar {
@@ -56,9 +56,9 @@ a:focus {
 }
 
 .contents {
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
     overflow-y: scroll;
     margin: 1vh;
     border-radius: 5px;
@@ -80,9 +80,10 @@ a:focus {
     }
     .menuItem {
         padding: 5px !important;
+        font-size: x-small;
     }
     hr{
-        margin: 5px 0;
+        margin: 0;
         border-width: 2px;
     }
     .about-info-container {
@@ -103,6 +104,15 @@ a:focus {
     .img-overlay{
         content:url("../img/turtle-phone.png");
         opacity: 0.2;
+    }
+    .personalStatement{
+        font-size: x-small !important;
+        padding: 10px 0px !important;
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+    ul {
+     margin-bottom: 0 !important;   
     }
 }
 
@@ -138,10 +148,37 @@ a:focus {
     max-width: 100%;
     max-height: 100%;
     right: 0;
+    z-index: -1;
 }
 
 .bg-container{
     width:100%;
     position: absolute;
     height: 100%;
+}
+
+.personalStatement{
+    font-size: large;
+    text-align:  center;
+    padding: 10px;
+    width: auto;
+    height: 100%;
+    font-size: x-large;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius : 15px;
+    background-color: rgba(31,78,121,1);
+}
+
+.nopad{
+    padding: 0 !important;
+}
+
+.image-scale {
+    max-width: 100%;
+}
+
+.pad-5 {
+    padding: 5px !important;
 }

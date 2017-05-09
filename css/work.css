@@ -37,6 +37,9 @@
         width: 80%;
         margin-left: 10% !important;
     }
+    .indiv-work {
+        padding-right: 0 !important;
+    }
 }
 
 .contents {
@@ -80,9 +83,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-size: large;
     vertical-align: middle;
-    display: inline-block;
-    overflow-y: scroll;
-    border-radius: 5px;
+    z-index: 1;
 }
 
 .image-container {
@@ -98,6 +99,11 @@
     max-height: 100%;
     max-width: 100%;
     margin: auto;
+}
+
+.image-small-scale {
+    max-width: 100%;
+    padding : 5px;
 }
 
 .button-photos {
@@ -129,7 +135,7 @@
 }
 
 .indiv-work-bottom {
-    padding: 30px !important;
+    padding-top: 30px !important;
 }
 
 .caption {
@@ -156,4 +162,23 @@
     max-height: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.down-icon {
+    position: absolute;
+    width: 5%;
+    bottom: -10%;
+    left: 47%;
+}
+
+.dropdown-img{
+    max-width: 100%;
+    opacity: 0;
+    z-index: 20 !important;
+    height: auto;
+}
+
+#indiv-proj {
+    z-index: 15;
+}
 }

@@ -26,13 +26,18 @@
     <body>
         <div class="container">
             <div class="row" id="navbar">
-                <div class="col-xs-12 menuBar">
+                <div class="col-xs-3 col-xs-offset-1">
+                    <a href="index.html"><div class="personalStatement">Ng Shi Kai</div></a>
+                </div>
+                <div class="col-xs-8 menuBar">
                     <ul class="list-inline">
                         <li class="menuItem"><a href="about.html">About Me</a></li>
                         <li class="menuItem selected"><a href="work.html">Work</a></li>
                         <li class="menuItem"><a href="interest.html">Interest</a></li>
                         <li class="menuItem"><a href="contact.html">Contact</a></li>
                     </ul>
+                </div>
+                <div class="col-xs-12">
                     <hr>
                 </div>
             </div>
@@ -102,43 +107,46 @@
                             </div>
                             
                             <div class="hidden" id="indiv-proj">
+                                <div class="down-icon">
+                                    <img src = "img/dropdown.png" class='dropdown-img'>
+                                </div>
                                                                 
                                 <div class="row indiv-work" id="trashifai">
                                     <div class="col-md-12 proj-heading">
                                         Trashifai
                                     </div>
-                                    <div class="col-md-6 indiv-work">
-                                        <div class="image-container">
-                                            <img src="img/trashifai.jpg" class='image-indiv-scale'>
+                                    <div class="col-md-5 col-md-offset-1 indiv-work">
+                                        <div class="image-container trashifai-thumbs">
+                                            <a href ="#" data-index ="0"><img src="img/trashifai.jpg" class='image-indiv-scale'></a>
                                         </div>
-                                        <div class="button-photos">
-                                            <button class="btn btn-danger btn-photos" id="trashifai-photos">
-                                                View Photos
-                                            </button>
+                                        <div class="row">
+                                            <div class="trashifai-thumbs">
+                                                <a href="#" data-index = '1'><div class="col-xs-4 nopad"><img src="img/trashifai2.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '2'><div class="col-xs-4 nopad"><img src="img/trashifai-vid.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '3'><div class="col-xs-4 nopad"><img src="img/trashifai5.jpg" class='image-small-scale'></div></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                     <div class="col-md-6 indiv-work-content-box">
-                                        <div class="indiv-work-content">
-                                            <p>
-                                                <strong>Project Overview</strong>
-                                                <br><br>Trashifai was conceptualized by my team during Wildhacks : 2016, a hackathon organized by Northwestern University that attracted more than 400 participants. 
-                                                <br><br>Trashifai is a smart waste sorting bin that detects and identifies waste being discarded into the bin. It then determines if the waste is recyclable and sort it accordingly.
-                                                <br><br>Trashifai was built on Clarifai, an image-recognition software built on artificial intelligence, and Arduino for hardware interface.
-                                                <br><br>Find out more about Trashifai <a class="normal-a" href="http://trashifai.me/">here.</a>
-                                            </p>
-                                            <br>
-                                            <p>
-                                                <strong>Lessons Learnt</strong>
-                                                <br><br><i class="fa fa-desktop" aria-hidden="true"></i> Front End Programming
-                                                <br><br><i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
-                                                <br><br><i class="fa fa-wrench" aria-hidden="true"></i> Rapid Prototyping
-                                            </p>
-                                        </div>
+                                        <p>
+                                            <strong>Project Overview</strong>
+                                            <br><br>Trashifai was conceptualized by my team during Wildhacks : 2016, a hackathon organized by Northwestern University that attracted more than 400 participants. 
+                                            <br><br>Trashifai is a smart waste sorting bin that detects and identifies waste being discarded into the bin. It then determines if the waste is recyclable and sort it accordingly.
+                                            <br><br>Trashifai was built on Clarifai, an image-recognition software built on artificial intelligence, and Arduino for hardware interface.
+                                            <br><br>Find out more about Trashifai <a class="normal-a" href="http://trashifai.me/">here.</a>
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <strong>Lessons Learnt</strong>
+                                            <br><br><i class="fa fa-desktop" aria-hidden="true"></i> Front End Programming
+                                            <br><br><i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
+                                            <br><br><i class="fa fa-wrench" aria-hidden="true"></i>  Design Thinking and Prototyping
+                                        </p>
                                     </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-10 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
+                                        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0 indiv-work-bottom indiv-work-content-box">
                                             <p>
                                                 <strong>Challenges</strong>
                                                 <br><br>The 48 hour time limit forces us to ideate and prototype quickly. Initially, we could not brainstorm effectively to identify a potential problem that we want to solve. However, we eventually conceptualized Trashifai by looking back at our past experiences.
@@ -146,55 +154,55 @@
                                                 Thus, we created a smart waste bin to help us identify the recyclables and sort them accordingly.
                                                 <br><br>My role in the team comprised of creating a mobile application that allows users to take a photo of the trash and identify if it is recyclable, hardware prototyping, and creating our team website.
                                             </p>
-                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
+                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">Back</button>
                                         </div>                                            
                                     </div>
                                 </div>
                                 
                                 <div class="row indiv-work" id="wndr">
-                                    <div class="col-md-12 proj-heading">
+                                    <div class="col-xs-12 proj-heading">
                                         WNDR
                                     </div>
                                     <div class="row">
-                                    <div class="col-md-5 col-md-offset-1 indiv-work">
-                                        <div class="image-container">
-                                            <img src="img/wndr-thumb.jpg" class='image-indiv-scale'>
+                                    <div class="col-xs-12 col-md-5 col-md-offset-1 indiv-work">
+                                        <div class="image-container wndr-thumbs">
+                                            <a href ="#" data-index="0"><img src="img/wndr-thumb.jpg" class='image-indiv-scale'></a>
                                         </div>
                                         <div class="button-photos">
-                                            <button class="btn btn-danger btn-photos" id="wndr-photos">
-                                                View Photos
-                                            </button>
+                                            <div class="wndr-thumbs">
+                                                <a href="#" data-index = '1'><div class="col-xs-4 nopad"><img src="img/wndr.jpg" class='image-small-scale' style="border: solid; border-color: rgba(200,200,200,0.5);"></div></a>
+                                                <a href="#" data-index = '2'><div class="col-xs-4 nopad"><img src="img/wndr1.jpg" class='image-small-scale' style="border: solid; border-color: rgba(200,200,200,0.5);"></div></a>
+                                                <a href="#" data-index = '3'><div class="col-xs-4 nopad"><img src="img/wndr3.jpg" class='image-small-scale' style="border: solid; border-color: rgba(200,200,200,0.5);"></div></a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 indiv-work-content-box">
-                                        <div class="indiv-work-content">
-                                            <p>
-                                                <strong>Project Overview</strong>
-                                                <br><br>
-                                                Wndr is a geo-based social media application developed by our team of three. The idea was conceptualized and tested by our clients and we implemented the software. 
-                                                <br><br>Wndr allows users to post their current thoughts along with an emoji to depict their emotions in their current locations. Other users can then view thoughts nearby and either like or comment on them, generating a discussion thread.
-                                                <br><br>This software was built on the steroid supersonic framework as a hybrid application using angular JS and HTML.
-                                            </p>
-                                            <br>
-                                            <p>
-                                                <strong>Lessons Learnt</strong>
-                                                <br><br>
-                                                 <i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
-                                                <br><br>
-                                                <i class="fa fa-users" aria-hidden="true"></i> AGILE software project management techniques
-                                            </p>
-                                        </div>
+                                    <div class="col-md-6 col-xs-12 indiv-work-content-box">
+                                        <p>
+                                            <strong>Project Overview</strong>
+                                            <br><br>
+                                            Wndr is a geo-based social media application developed by our team of three. The idea was conceptualized and tested by our clients and we implemented the software. 
+                                            <br><br>Wndr allows users to post their current thoughts along with an emoji to depict their emotions in their current locations. Other users can then view thoughts nearby and either like or comment on them, generating a discussion thread.
+                                            <br><br>This software was built on the steroid supersonic framework as a hybrid application using angular JS and HTML.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <strong>Lessons Learnt</strong>
+                                            <br><br>
+                                             <i class="fa fa-code" aria-hidden="true"></i> Programming in Angular JS, HTML and CSS.
+                                            <br><br>
+                                            <i class="fa fa-users" aria-hidden="true"></i> AGILE software project management techniques
+                                        </p>
                                     </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 indiv-bottom indiv-work-content-box">
+                                        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0 indiv-work-bottom indiv-work-content-box">
                                             <p>
                                                 <strong>Challenges</strong>
                                                 <br><br>Our team had trouble adopting AGILE principles initially. We could not identify areas of improvement and were slow on adapting new working processes. 
                                                 <br><br>Over time, as we improved team communications and became more open to new ideas, we managed to adopt AGILE principles more effectively.
                                                 <br><br>Through this, I learned to be flexible and conduct introspection to identify areas of improvement and problems before they escalate into more severe ones.
                                             </p>
-                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
+                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">Back</button>
                                         </div>                                            
                                     </div>
                                 </div>
@@ -204,44 +212,44 @@
                                         Illumination
                                     </div>
                                     <div class="col-md-5 col-md-offset-1 indiv-work">
-                                        <div class="image-container">
-                                            <img src="img/illumination1.jpg" class='image-indiv-scale'>
+                                        <div class="image-container illu-thumbs">
+                                            <a href = "#" data-index = '0' ><img src="img/illumination1.jpg" class='image-indiv-scale'></a>
                                         </div>
                                         <div class="button-photos">
-                                            <button class="btn btn-danger btn-photos" id="illumination-photos">
-                                                View Photos
-                                            </button>
+                                            <div class="illu-thumbs">
+                                                <a href="#" data-index = '1'><div class="col-xs-4 nopad"><img src="img/illumination1.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '2'><div class="col-xs-4 nopad"><img src="img/illumination2.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '3'><div class="col-xs-4 nopad"><img src="img/illumination3.jpg" class='image-small-scale'></div></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                     <div class="col-md-5 indiv-work-content-box">
-                                        <div class="indiv-work-content">
-                                            <p>
-                                                <strong>Project Overview</strong>
-                                                <br><br>Illumination is a capstone design project. Our team of 5 were tasked with designing a lighting support and control system for our client's experiment setup.
-                                                <br><br>The designed support system allows the light to translate across the horizontal plane above the experimental setup.
-                                                <br><br>The electrical control system allows the light's brightness to be varied and automates the toggling of the light.
-                                            </p>
-                                            <br>
-                                            <p>
-                                                <strong>Lessons Learnt</strong>
-                                                <br><br><i class="fa fa-microchip" aria-hidden="true"></i> Arduino Programming
-                                                <br><br><i class="fa fa-wrench" aria-hidden="true"></i> Design Thinking and Prototyping
-                                            </p>
-                                        </div>
+                                        <p>
+                                            <strong>Project Overview</strong>
+                                            <br><br>Illumination is a capstone design project. Our team of 5 were tasked with designing a lighting support and control system for our client's experiment setup.
+                                            <br><br>The designed support system allows the light to translate across the horizontal plane above the experimental setup.
+                                            <br><br>The electrical control system allows the light's brightness to be varied and automates the toggling of the light.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <strong>Lessons Learnt</strong>
+                                            <br><br><i class="fa fa-microchip" aria-hidden="true"></i> Arduino Programming
+                                            <br><br><i class="fa fa-wrench" aria-hidden="true"></i> Design Thinking and Prototyping
+                                        </p>
                                     </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
+                                        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0 indiv-work-bottom indiv-work-content-box">
                                             <p>
                                                 <strong>Challenges</strong>
-                                                <br><br>The design of the support system requires mechanical engineering knowledge, which I had not been exposed to before. Thus, I had to do extensive research before I could contribute effectively in design meetings.
+                                                <br><br>The design of the support system required mechanical engineering knowledge, which I had not been exposed to before. Thus, I had to do extensive research before I could contribute effectively in design meetings.
                                                 This project has also allowed me to learn about design thinking processes such as brainstorming techniques and rapid prototyping. 
                                                 <br><br>I oversaw the circuitry and Arduino code design of the control system, and the lack of electronics knowledge made this a hard task. After some fruitless research, I consulted the lab assistant for advice, and managed to build the circuitry successfully eventually.
                                                 With the circuitry design complete, the coding of the Arduino was an easy task, since I have coding experience in Arduino.
                                                 <br><br>I gained confidence in dealing with uncertainties and learned about design thinking through this project.
                                             </p>
-                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
+                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">Back</button>
                                         </div>                                            
                                     </div>
                                 </div>
@@ -252,36 +260,36 @@
                                     </div>
                                     <div class="row">
                                     <div class="col-md-5 col-md-offset-1 indiv-work">
-                                        <div class="image-container">
-                                            <img src="img/secu-ring1.jpg" class='image-indiv-scale'>
+                                        <div class="image-container secu-thumbs">
+                                            <a href="#" data-index = "0"><img src="img/secu-ring1.jpg" class='image-indiv-scale'></a>
                                         </div>
-                                        <div class="button-photos">
-                                            <button class="btn btn-danger btn-photos" id="secu-ring-photos">
-                                                View Photos
-                                            </button>
+                                        <div class="row">
+                                            <div class="secu-thumbs">
+                                                <a href="#" data-index = '1'><div class="col-xs-4 nopad"><img src="img/secu-ring2.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '2'><div class="col-xs-4 nopad"><img src="img/secu-ring3.jpg" class='image-small-scale'></div></a>
+                                                <a href="#" data-index = '3'><div class="col-xs-4 nopad"><img src="img/secu-ring4.jpg" class='image-small-scale'></div></a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-5 indiv-work-content-box">
-                                        <div class="indiv-work-content">
-                                            <p>
-                                                <strong>Project Overview</strong>
-                                                <br><br>Secu-ring is a Web development and server management firm in Berlin, Germany. During the summer of 2016, I was recruited as a software development intern and was assigned to a web development project.
-                                                <br><br>I was tasked with implementing various front-end and back-end functionalities of 'Billing WebServices', an internal accounting tool.
-                                                <br><br>Find out more about Secu-Ring <a class="normal-a" href="https://www.secu-ring.de/home.html">here</a>.
-                                            </p>
-                                            <br>
-                                            <p>
-                                                <strong>Lessons Learnt</strong>
-                                                <br><br>
-                                                <i class="fa fa-code" aria-hidden="true"></i> Programming in PHP, Javascript, HTML and CSS.
-                                                <br><br>
-                                                <i class="fa fa-users" aria-hidden="true"></i> AGILE software project management techniques
-                                            </p>
-                                        </div>
+                                        <p>
+                                            <strong>Project Overview</strong>
+                                            <br><br>Secu-ring is a Web development and server management firm in Berlin, Germany. During the summer of 2016, I was recruited as a software development intern and was assigned to a web development project.
+                                            <br><br>I was tasked with implementing various front-end and back-end functionalities of 'Billing WebServices', an internal accounting tool.
+                                            <br><br>Find out more about Secu-Ring <a class="normal-a" href="https://www.secu-ring.de/home.html">here</a>.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <strong>Lessons Learnt</strong>
+                                            <br><br>
+                                            <i class="fa fa-code" aria-hidden="true"></i> Programming in PHP, Javascript, HTML and CSS.
+                                            <br><br>
+                                            <i class="fa fa-users" aria-hidden="true"></i> AGILE software project management techniques
+                                        </p>
                                     </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-11 col-md-offset-1 indiv-work-bottom indiv-work-content-box">
+                                        <div class="col-md-11 col-md-offset-1 col-xs-12 col-xs-offset-0 indiv-work-bottom indiv-work-content-box">
                                             <p>
                                                 <strong>Challenges</strong>
                                                 <br><br>The difference in work culture and language barrier made it hard for me to integrate into the company successfully.
@@ -291,7 +299,7 @@
                                                 <br><br>Thus, it is important to change the organization culture first before implementing any project management techniques.
                                                 Techniques that suit one organization may not be effective in other organizations unless the work culture can adapt to the demands of the project management technique.
                                             </p>
-                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">To Project Thumbnails</button>
+                                            <button class="btn btn-thumbnail btn-default" onclick="thumbnailView();">Back</button>
                                         </div>                                            
                                     </div>
                                 </div>
