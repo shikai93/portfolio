@@ -209,3 +209,26 @@ $('.down-icon').hover(
         clearInterval(scrolldelay);
     }
 );
+
+var wndrDiv = $('#wndr');
+var illuminationDiv = $('#illumination');
+var secuDiv = $('#secu-ring');
+var contents = $('.contents');
+$('.down-icon').click(
+    function(){
+    
+        if (contents.scrollTop() < wndrDiv.offset().top - $('#trashifai').offset().top) {
+            contents.animate({
+                scrollTop: wndrDiv.offset().top - $('#trashifai').offset().top + 'px'
+            }, 'medium');
+        } else if (contents.scrollTop() < illuminationDiv.offset().top - $('#trashifai').offset().top) {
+            contents.animate({
+                scrollTop: illuminationDiv.offset().top - $('#trashifai').offset().top + 'px'
+            }, 'medium');
+        } else if (contents.scrollTop() < secuDiv.offset().top - $('#trashifai').offset().top) {
+            contents.animate({
+                scrollTop: secuDiv.offset().top - $('#trashifai').offset().top + 'px'
+            }, 'medium');
+        }
+    }
+);

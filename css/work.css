@@ -5,6 +5,14 @@
     margin: 0 !important;
 }
 
+.seperate-line {
+    padding: 3% 0 0 0;
+}
+
+.titles{
+    font-weight: bold;
+    font-size: 1.1em;
+}
 #thumbnails{
     height: 100%;
 }
@@ -40,6 +48,10 @@
     .indiv-work {
         padding-right: 0 !important;
     }
+    .indiv-work-bottom{
+        padding-top: 0 !important;
+    }
+    
 }
 
 .contents {
@@ -51,12 +63,6 @@
     display: table;
     background-color: rgba(0,0,0,.7);
     z-index: 10;
-}
-
-.indiv-thumbnail {
-    position: relative;
-    cursor: pointer;
-    height: 100%;
 }
 
 .img-scale {
@@ -106,15 +112,8 @@
     padding : 5px;
 }
 
-.button-photos {
-    padding-top: 30px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: medium;
-}
-
-.btn-photos {
-    border-radius: 5px;
+.alternate-work{
+    background-color: rgba(200,200,200,0.5);
 }
 
 .proj-heading {
@@ -122,12 +121,16 @@
     font-weight: bold;
     color: black;
     text-align: center;
-    padding: 15px;
+    padding: 15px 30px 15px 15px;
+    margin-top: -15px;
 }
 
 .btn-thumbnail {
     margin: 15px;
+    padding-right: 15px;
     float: right;
+    background-color: rgba(200,200,200,1);
+    font-weight: bold !important;
 }
 
 .normal-a {
@@ -135,7 +138,7 @@
 }
 
 .indiv-work-bottom {
-    padding-top: 30px !important;
+    padding-top: 30px;
 }
 
 .caption {
@@ -149,6 +152,14 @@
     z-index: 5;
 }
 
+.skills{
+    line-height: 2;
+}
+
+.icon{
+    padding: 10px;
+}
+    
 .indiv-thumbnail-new {
     position: relative;
     cursor: pointer;
@@ -169,6 +180,7 @@
     width: 5%;
     bottom: -10%;
     left: 47%;
+    cursor: pointer;
 }
 
 .dropdown-img{
@@ -180,5 +192,4 @@
 
 #indiv-proj {
     z-index: 15;
-}
 }
