@@ -64,8 +64,12 @@
     padding: 15px;
 }
 
-.btn-thumbnail{
-    font-size: large;
+.btn-thumbnail {
+    margin: 15px;
+    padding-right: 15px;
+    float: right;
+    background-color: rgba(200,200,200,1);
+    font-weight: bold !important;
 }
 
 .white-popup {
@@ -76,11 +80,16 @@
   text-align: center;
 }
 
+.seperate-line {
+    padding: 5% 0;
+}
+
 .down-icon {
     position: absolute;
     width: 5%;
     bottom: -10%;
     left: 47%;
+    cursor: pointer;
 }
 
 .dropdown-img{

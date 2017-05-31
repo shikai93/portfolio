@@ -183,17 +183,20 @@ function thumbnailView() {
 }
 
 $( "#indiv-proj" ).hover(
-  blink,
+  hoverIn,
   function() {
-    $('.dropdown-img').css('opacity', 0);
+    var dropdownImg = $('.dropdown-img');
+    dropdownImg.css('opacity', 0);
+    dropdownImg.css('cursor', 'default');
   }
 );
 
-function blink() {
+function hoverIn() {
     var dropdownImg = $('.dropdown-img');
     var contents = $('.contents');
     if (parseInt(contents[0].scrollHeight - contents.scrollTop()) > contents.outerHeight() + 50) {
         dropdownImg.css('opacity', 0.3);
+        dropdownImg.css('cursor', 'pointer');
     }
 }
 
@@ -213,22 +216,29 @@ $('.down-icon').hover(
 var wndrDiv = $('#wndr');
 var illuminationDiv = $('#illumination');
 var secuDiv = $('#secu-ring');
+var trashifaiDiv = $('#trashifai');
 var contents = $('.contents');
 $('.down-icon').click(
     function(){
-    
-        if (contents.scrollTop() < wndrDiv.offset().top - $('#trashifai').offset().top) {
+        if (contents.scrollTop() < wndrDiv.offset().top - trashifaiDiv.offset().top) {
             contents.animate({
-                scrollTop: wndrDiv.offset().top - $('#trashifai').offset().top + 'px'
+                scrollTop: wndrDiv.offset().top - trashifaiDiv.offset().top + 'px'
             }, 'medium');
-        } else if (contents.scrollTop() < illuminationDiv.offset().top - $('#trashifai').offset().top) {
+        } else if (contents.scrollTop() < illuminationDiv.offset().top - trashifaiDiv.offset().top) {
             contents.animate({
-                scrollTop: illuminationDiv.offset().top - $('#trashifai').offset().top + 'px'
+                scrollTop: illuminationDiv.offset().top - trashifaiDiv.offset().top + 'px'
             }, 'medium');
-        } else if (contents.scrollTop() < secuDiv.offset().top - $('#trashifai').offset().top) {
+        } else if (contents.scrollTop() < secuDiv.offset().top - trashifaiDiv.offset().top) {
             contents.animate({
-                scrollTop: secuDiv.offset().top - $('#trashifai').offset().top + 'px'
+                scrollTop: secuDiv.offset().top - trashifaiDiv.offset().top + 'px'
             }, 'medium');
+        } else {
+            contents.animate({
+                scrollTop: contents[0].scrollHeight + 'px'
+            }, 'medium');
+            var dropdownImg = $('.dropdown-img');
+            dropdownImg.css('opacity', 0);
+            dropdownImg.css('cursor', 'default');
         }
     }
 );

@@ -168,7 +168,9 @@ $('.travel-thumbs a').each(function () {
 $( "#interests" ).hover(
   blink,
   function() {
-    $('.dropdown-img').css('opacity', 0);
+    var dropdownImg = $('.dropdown-img');
+    dropdownImg.css('opacity', 0);
+    dropdownImg.css('cursor', 'default');
   }
 );
 
@@ -177,6 +179,7 @@ function blink() {
     var contents = $('.contents');
     if (parseInt(contents[0].scrollHeight - contents.scrollTop()) > contents.outerHeight() + 50) {
         dropdownImg.css('opacity', 0.3);
+        dropdownImg.css('cursor', 'pointer');
     }
 }
 
@@ -190,5 +193,30 @@ $('.down-icon').hover(
     },
     function() {
         clearInterval(scrolldelay);
+    }
+);
+
+var danceDiv = $('#dance');
+var sketchDiv = $('#sketch');
+var travelDiv = $('#travel');
+var contents = $('.contents');
+$('.down-icon').click(
+    function(){
+        if (contents.scrollTop() < sketchDiv.offset().top - danceDiv.offset().top) {
+            contents.animate({
+                scrollTop: sketchDiv.offset().top - danceDiv.offset().top + 'px'
+            }, 'medium');
+        } else if (contents.scrollTop() < travelDiv.offset().top - danceDiv.offset().top) {
+            contents.animate({
+                scrollTop: travelDiv.offset().top - danceDiv.offset().top + 'px'
+            }, 'medium');
+        } else {
+            contents.animate({
+                scrollTop: contents[0].scrollHeight + 'px'
+            }, 'medium');
+            var dropdownImg = $('.dropdown-img');
+            dropdownImg.css('opacity', 0);
+            dropdownImg.css('cursor', 'default');
+        }
     }
 );
